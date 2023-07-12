@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+        /* h3 {
+            color: peru
+        }
+
+        h3:hover {
+            color: tomato;
+            background-color: skyblue;
+        }
+
+        input:focus {
+            color: blue;
+            /* padding-left: 20px; */
+            /* outline: 0;
+            border: 1px solid purple
+        }
+
+        a:visited {
+            color: gray;
+        }
+
+        li:first-child {
+            color: gray;
+        }
+
+        li:nth-child(2n+1) {
+            color: purple
+        }
+
+        ; */ 
+
+        .box {
+            border: 2px dotted plum;
+            width: 200px;
+            position: relative;
+        }
+        /* .ring{
+            position: absolute;
+            top: 40px;
+            left: 100px;
+        } */
+        .swim-container{
+            position: relative;
+            border: 2px solid red;
+        }
+        .boy{
+            z-index:  11;
+        }
+        .ring{
+            /* position: relative; */
+            top: -70px;
+            z-index: 5;
+        }
+       
+        .water{
+            top: -150px;
+        }
+        h3::after{
+            content: '.pdf';
+            color: red;
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>my heading</h3>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <br>
+    <a href="https://www.google.com/">goog</a>
+    <a href="https://en.wikipedia.org/wiki/Madagascar">mada</a>
+    <ul>
+        <li>alia</li>
+        <li>dalia</li>
+        <li>malia</li>
+        <li>kalia</li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ol>
+        <!-- flow related  -->
+        <li>static</li>
+
+        <li>relative</li>
+        <li>absolute</li>
+        <!-- scroll related -->
+        <li>fixed</li>
+        <li>sticky</li>
+    </ol>
+    <div class="swim-container">
+        <div class="box boy"><img src="sstyle\images\boy.svg" alt=""></div>
+        <div class="box ring"><img src="sstyle/images/ring.svg" alt=""></div>
+        <div class="box water"><img src="sstyle/images/water.svg" alt=""></div>
+
+    </div>
+    <h3>heading -1</h3>
+    <h3>heading -2</h3>
+    <h3>heading -3</h3>
+</body>
+
+</html>
